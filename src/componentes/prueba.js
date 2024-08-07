@@ -3,6 +3,6 @@ export default function Button(){
     console.log("hola mundo");
   }
     return(
-        <Button onClick={function}>Registrarse</Button>
+        <Button onClick={funcion}>Registrarse</Button>
     )
 }
