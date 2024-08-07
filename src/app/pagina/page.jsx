@@ -1,12 +1,12 @@
 
 function pagina(){
     return (
-        <html>
+        <div>
             <header>holaaa</header>
             <div>
                 <p>hola</p>
             </div>
-        </html>
+        </div>
     )
 }
 
