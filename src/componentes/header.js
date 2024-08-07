@@ -1,10 +1,10 @@
-import Tittle from "src\componentes\Tittle.js";
-import TittleClass from "src\componentes\TittleClass.js";
-export default function Button(){
+import Tittle from "./Tittle.js";
+import TittleClass from "./TittleClass.js";
+export default function Header({ text }){
       return(
           <nav>
             <Tittle></Tittle>
-            <TittleClass></TittleClass>
+            <TittleClass>{text}</TittleClass>
           </nav>
       )
   }

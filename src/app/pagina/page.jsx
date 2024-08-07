@@ -1,12 +1,10 @@
+"use client"
+
+import Header from "@/componentes/header"
 
 function pagina(){
     return (
-        <div>
-            <header>holaaa</header>
-            <div>
-                <p>hola</p>
-            </div>
-        </div>
+        <Header >{}</Header>
     )
 }
 
