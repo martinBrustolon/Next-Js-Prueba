@@ -1,5 +1,5 @@
 export default function Tittle() {
     return (
-        <h1 a href="#">Classroom</h1>
+        <h1 href="#">Classroom</h1>
     )
 }
