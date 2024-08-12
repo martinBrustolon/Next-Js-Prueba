@@ -1,7 +1,7 @@
-export default function TittleClass({ text }) {
+export default function TittleClass({ number }) {
     return (
-        <h2 href="#">
-            {text}
-        </h2>
+        <h3 href="#">
+            {number}
+        </h3>
     )
 }
