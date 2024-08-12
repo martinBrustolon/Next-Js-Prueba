@@ -1,8 +1,8 @@
-
+import NombresMateria from "../pagina/nombresProfesores"
 function pagina(){
     return (
         <div>
-            <header>holaaa</header>
+            <NombresMateria materia={"dios"} nombre={"hola"}/>
         </div>
     )
 }
