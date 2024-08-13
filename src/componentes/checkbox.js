@@ -1,5 +1,8 @@
-export default function CheckBox({ text }) {
+export default function CheckBox({ onChange, text }) {
     return (
-        <checkbox>{text}</checkbox>
+        <div>
+            <input type="checkbox" id="check" onChange={onChange}/>
+            <label>{text}</label>            
+        </div>
     )
 }

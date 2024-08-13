@@ -1,11 +1,39 @@
 "use client"
 
 import Header from "@/componentes/header"
+import CheckBox from "@/componentes/checkbox"
+import { useEffect, useState } from "react"
 
 function pagina(){
     let[cuenta, setCuenta] = useState(0)
+    let [check, setCheck] = useState("Botón feliz :)")
+    let [emocion, setEmocion] = useState("feliz")
+    useEffect(() =>{
+        if (emocion == "feliz") {
+            setCheck("Botón triste :(")
+        }
+        else {
+            setCheck("Botón feliz :)")
+        }
+    }
+        ,[emocion]
+    )
+
+    function cambiarEmocion(event) {
+        console.log(emocion);
+        let checked = event.target.checked;
+
+        if(checked) {
+            setEmocion("feliz")
+        }
+        else {
+            setEmocion("triste")
+        }
+    }
+
     function cambiarContador(){
-        if (document.getElementById("check").value == false) {
+        console.log(document.getElementById("check").value)
+        if (document.getElementById("check").checked == false) {
             setCuenta(cuenta+1)
         }
         else {
@@ -14,8 +42,8 @@ function pagina(){
     }
     return (
         <div>
-        <Header text="hola" functionButton={cambiarContador} textButton={"hola"}></Header>
-        <CheckBox text={"decrementar"} id="check"></CheckBox>
+        <Header text="Medidor de felicidad" functionButton={cambiarContador} textButton={"Esquizofrenia"}></Header>
+        <CheckBox onChange={cambiarEmocion} text={check}></CheckBox>
         <h3>Contador:{cuenta}</h3>
         </div>
 

@@ -1,5 +1,5 @@
-export default function Tittle() {
+export default function Tittle({text}) {
     return (
-        <h1 href="#">Classroom</h1>
+        <h1 href="#">{text}</h1>
     )
 }
