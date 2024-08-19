@@ -6,6 +6,7 @@ import { useEffect, useState } from "react"
 
 function pagina(){
     let[cuenta, setCuenta] = useState(0)
+    let[checked]
     let [check, setCheck] = useState("Botón feliz :)")
     let [emocion, setEmocion] = useState("feliz")
     useEffect(() =>{
@@ -22,6 +23,7 @@ function pagina(){
     function cambiarEmocion(event) {
         console.log(emocion);
         let checked = event.target.checked;
+        console.log(checked)
 
         if(checked) {
             setEmocion("feliz")
