@@ -6,7 +6,7 @@ import { useEffect, useState } from "react"
 
 function pagina(){
     let[cuenta, setCuenta] = useState(0)
-    let[checked,setChecked] = useState(false)
+    let[checked,setChecked] = useState(true)
     let [check, setCheck] = useState("Botón feliz :)")
     let [emocion, setEmocion] = useState("feliz")
     useEffect(() =>{
@@ -46,8 +46,8 @@ function pagina(){
     }
     return (
         <div>
-        <Header text="Medidor de felicidad" functionButton={cambiarContador} textButton={"Esquizofrenia"}></Header>
-        <CheckBox onChange={cambiarEmocion} text={check}></CheckBox>
+        <Header text="Medidor de felicidad" functionButton={cambiarContador} textButton={"Esquizofrenia"} color={checked}></Header>
+        <CheckBox onChange={cambiarEmocion} text={check}/>
         <h3>Contador:{cuenta}</h3>
         </div>
 
