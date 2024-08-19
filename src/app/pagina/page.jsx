@@ -1,10 +1,17 @@
 "use client"
 
-import Header from "@/componentes/header"
+import Button from "@/componentes/boton"
+import Checkbox from "@/componentes/checkbox"
+import Contador from "@/componentes/contador"
+
 
 function pagina(){
     return (
-        <Header >{}</Header>
+        <div>
+        <Button text={"hola"}></Button>
+        <Checkbox text={"Cambiar emocion"}></Checkbox>
+        <Contador text={0}></Contador>
+        </div>
     )
 }
 
